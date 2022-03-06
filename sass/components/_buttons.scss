@@ -1,0 +1,23 @@
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+
+  padding: 0.65em 2.6em;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--clr-secondary);
+  border: 2px solid var(--clr-accent);
+  transition: 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  &:hover,
+  &:focus {
+    border-color: var(--clr-secondary);
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+  }
+}

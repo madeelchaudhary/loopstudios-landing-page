@@ -1,0 +1,36 @@
+@use "../abstracts/" as a;
+.featured-content {
+  margin-top: 1rem;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 0.6em;
+  }
+}
+
+@include a.mq(md) {
+  .grid__featured {
+    grid-template-columns: 60% 1fr;
+    align-items: center;
+  }
+  .featured-content {
+    align-self: end;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-left: -4rem;
+    margin-top: 0;
+    background-color: var(--clr-primary);
+    text-align: left;
+  }
+}
+@include a.mq(lg) {
+  .grid__featured {
+    grid-template-columns: 67% auto;
+  }
+  .featured-content {
+    padding-top: 7rem;
+    padding-left: 7rem;
+    padding-right: 0.5rem;
+    margin-left: -15rem;
+  }
+}

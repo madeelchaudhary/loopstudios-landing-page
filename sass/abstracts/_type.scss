@@ -1,0 +1,18 @@
+$type: (
+  sm: (
+    300: 0.915rem,
+    400: 0.9375rem,
+    500: 1.125rem,
+    600: 1.65rem,
+    700: 2rem,
+    800: clamp(2.25rem, calc(1.85rem + 3vw), 3.25rem),
+  ),
+  lg: (
+    300: 0.915rem,
+    400: 1rem,
+    500: 1.25rem,
+    600: 1.85rem,
+    700: 2.85rem,
+    800: clamp(3.25rem, calc(2rem + 3vw), 4.25rem),
+  ),
+);

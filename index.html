@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Loopstudios landing page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="flex flex__header">
+        <div class="logo-wrapper">
+          <a href="#" aria-label="Loopstudios Brand Logo">
+            <img src="images/logo.svg" alt="" class="logo">
+          </a>
+        </div>
+        <button type="button" class="nav-toggler">
+          <img src="images/icon-hamburger.svg" alt="Open Navigation" class="hamburger">
+          <img src="images/icon-close.svg" alt="Close Navigation" class="nav-close">
+        </button>
+
+        <nav class="nav nav-primary" aria-label="Primary">
+          <ul class="nav-list" role="list">
+            <li class="nav-list-item"><a href="#">About</a></li>
+            <li class="nav-list-item"><a href="#">Careers</a></li>
+            <li class="nav-list-item"><a href="#">Events</a></li>
+            <li class="nav-list-item"><a href="#">Products</a></li>
+            <li class="nav-list-item"><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero">
+      <div class="container">
+        <div class="flex flex__hero">
+          <header>
+            <h1 class="title">
+              Immersive experiences that deliver
+            </h1>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-featured">
+      <div class="container">
+        <div class="grid grid__featured">
+          <figure>
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-interactive.jpg">
+              <img src="images/mobile/image-interactive.jpg" alt="Man in interactive VR">
+            </picture>
+          </figure>
+          <div class="featured-content">
+            <h2 class="section-title">
+              The leader in interactive VR
+            </h2>
+            <p class="section-description">
+              Founded in 2011, Loopstudios has been producing world-class virtual reality
+              projects for some of the best companies around the globe. Our award-winning
+              creations have transformed businesses through digital experiences that bind
+              to their brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-portfolio">
+      <div class="container">
+        <header class="flex flex__portfolio-header">
+          <h2 class="section-title">
+            Our creations
+          </h2>
+          <a href="#" class="btn btn-outline">See all</a>
+        </header>
+        <div class="grid grid__portfolio">
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-deep-earth.jpg">
+              <img src="images/mobile/image-deep-earth.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              Deep earth
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-night-arcade.jpg">
+              <img src="images/mobile/image-night-arcade.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              Night arcade
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-soccer-team.jpg">
+              <img src="images/mobile/image-soccer-team.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              Soccer team VR
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-grid.jpg">
+              <img src="images/mobile/image-grid.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              The<br> grid
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-from-above.jpg">
+              <img src="images/mobile/image-from-above.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              From up above VR
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-pocket-borealis.jpg">
+              <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              Pocket borealis
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-curiosity.jpg">
+              <img src="images/mobile/image-curiosity.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              The curiosity
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item">
+            <picture>
+              <source media="(min-width: 52em)" srcset="images/desktop/image-fisheye.jpg">
+              <img src="images/mobile/image-fisheye.jpg" alt="" class="portfolio-img">
+            </picture>
+            <figcaption class="portfolio-content">
+              Make it fisheye
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer bg-secondary text-primary">
+    <div class="container">
+      <div class="flex flex__footer">
+        <div class="f-item">
+          <a href="#">
+            <img src="images/logo.svg" alt="Loopstudios Brand Logo" class="logo">
+          </a>
+        </div>
+        <div class="f-item">
+          <nav class="nav nav-secondary" aria-label="Secondary">
+            <ul class="nav-list" role="list">
+              <li class="nav-list-item"><a href="#">About</a></li>
+              <li class="nav-list-item"><a href="#">Careers</a></li>
+              <li class="nav-list-item"><a href="#">Events</a></li>
+              <li class="nav-list-item"><a href="#">Products</a></li>
+              <li class="nav-list-item"><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="f-item">
+          <ul class="social-list" role="list">
+            <li class="social-list-item">
+              <a href="#"><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+            </li>
+            <li class="social-list-item">
+              <a href="#"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
+            </li>
+            <li class="social-list-item">
+              <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest Icon"></a>
+            </li>
+            <li class="social-list-item">
+              <a href="#"><img src="images/icon-instagram.svg" alt="Instagram Icon"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-item">
+          <p class="credit">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggler = document.querySelector('.nav-toggler')
+    const header = document.querySelector('.header')
+    function navToggleHandler(e) {
+      header.classList.toggle('nav-show')
+    }
+    navToggler.addEventListener('click', navToggleHandler);
+
+    const navLinks = document.querySelectorAll('.nav-primary a')
+    function navLinkHandler() {
+      if (header.classList.contains('nav-show')) {
+        header.classList.remove('nav-show')
+      } else {
+        return
+      }
+    }
+    navLinks.forEach(link => {
+      link.addEventListener('click', navLinkHandler)
+    });
+  </script>
+
+</body>
+
+</html>

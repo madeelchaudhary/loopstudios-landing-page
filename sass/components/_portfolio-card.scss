@@ -1,0 +1,46 @@
+@use "../abstracts" as a;
+.portfolio-item {
+  position: relative;
+  color: var(--clr-primary);
+  background-image: linear-gradient(45deg, rgba(black, 0.6), rgba(black, 0.01));
+  transition: background, color 0.25s ease-in-out;
+}
+
+.portfolio-item:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    rgba(white, 0.6),
+    rgba(rgb(255, 255, 255), 0.9)
+  );
+  color: var(--clr-secondary);
+}
+
+.portfolio-img {
+  mix-blend-mode: overlay;
+}
+.portfolio-content {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 1.2rem;
+  max-width: 8.5ch;
+  font-size: var(--fs-600);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+@include a.mq(md) {
+  .portfolio-item {
+    background-image: linear-gradient(
+      0deg,
+      rgba(black, 0.65) 25%,
+      rgba(rgba(0, 0, 0, 0.267), 0.01)
+    );
+  }
+
+  .portfolio-content {
+    left: 1.75rem;
+    bottom: 1.2rem;
+  }
+}

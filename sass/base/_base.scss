@@ -1,0 +1,28 @@
+@use "../abstracts" as a;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  --gap: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  --spacer: 5.65rem 0;
+  padding: var(--spacer);
+}
+
+@include a.mq(md) {
+  .section {
+    --spacer: 7.5rem 0;
+  }
+}
+@include a.mq(lg) {
+  .section {
+    --spacer: 8.75rem 0;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../abstracts/" as a;
+.section-portfolio {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+
+  .flex__portfolio-header {
+    justify-content: center;
+  }
+  .section-title {
+    margin-bottom: 1.25em;
+  }
+  .btn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5rem;
+  }
+
+  .portfolio-img {
+    width: 100%;
+  }
+}
+
+@include a.mq(md) {
+  .section-portfolio {
+    .flex__portfolio-header {
+      justify-content: space-between;
+    }
+    .btn {
+      position: static;
+    }
+  }
+
+  .grid__portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}

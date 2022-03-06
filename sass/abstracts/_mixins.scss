@@ -1,0 +1,35 @@
+@mixin psuedo(
+  $loc: before,
+  $pos: absolute,
+  $top: 0,
+  $right: auto,
+  $bottom: auto,
+  $left: 0
+) {
+  position: relative;
+  &::#{$loc} {
+    position: $pos;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    content: "";
+    @content;
+  }
+}
+
+@mixin underline($width: 1.5rem, $clr: white, $offset: 10%) {
+  @include psuedo(after, absolute, calc(100% + $offset), auto, auto, 50%) {
+    width: $width;
+    height: 0.1rem;
+    background-color: $clr;
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+}

@@ -1,0 +1,27 @@
+@use "../abstracts" as a;
+
+:root {
+  --fw-light: 300;
+  --fw-normal: 400;
+
+  --ff-primary: "Alata", sans-serif;
+  --ff-secondary: "Josefin Sans", sans-serif;
+
+  @each $color, $value in a.$clr {
+    --clr-#{$color}: #{$value};
+  }
+
+  @each $screen-size, $font-size in a.$type {
+    @if $screen-size == sm {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+      @include a.mq(md) {
+        @each $size, $value in $font-size {
+          --fs-#{$size}: #{$value};
+        }
+      }
+    }
+  }
+}

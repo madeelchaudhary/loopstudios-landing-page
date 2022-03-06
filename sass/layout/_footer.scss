@@ -1,0 +1,86 @@
+@use "../abstracts" as a;
+.footer {
+  padding: 3rem 0;
+  padding-top: 4.5rem;
+}
+.flex__footer {
+  flex-direction: column;
+  gap: 1.85rem;
+}
+
+.nav-secondary .nav-list,
+.social-list {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-secondary {
+  margin: 0.5rem 0;
+  text-align: center;
+
+  .nav-list {
+    gap: 1.25rem;
+  }
+  a {
+    text-decoration: none;
+    color: var(--clr-primary);
+    @include a.underline;
+  }
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+
+  a {
+    display: block;
+    @include a.underline($offset: 50%);
+  }
+}
+
+.credit {
+  opacity: 0.7;
+}
+
+@include a.mq(md) {
+  .footer {
+    padding: 2.65rem 0 1.85rem;
+  }
+  .flex__footer {
+    display: grid;
+    grid-column: auto 1fr auto;
+    gap: 1.25rem;
+  }
+
+  .f-item:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .f-item:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .f-item:nth-child(3) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .f-item:nth-child(4) {
+    grid-row: 2;
+    grid-column: 3;
+  }
+
+  .nav-secondary {
+    .nav-list {
+      gap: 2.5rem;
+    }
+
+    a {
+      &::after {
+        top: 150%;
+      }
+    }
+  }
+  .social-list {
+    justify-content: flex-end;
+  }
+}
